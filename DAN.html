@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website SMA Negeri 3 Luwu</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="Website resmi SMA Negeri 3 Luwu. Informasi profil sekolah, galeri, berita, dan kontak.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+      transition: background-color 0.5s;
+    }
+    header, nav, footer {
+      background-color: #111;
+      color: rgb(193, 241, 20);
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+    nav {
+      position: fixed;
+      top: 90px;
+      width: 100%;
+      z-index: 999;
+    }
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      margin: 5px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      transition: color 0.3s;
+      text-shadow: 1px 1px 3px rgba(110, 2, 250, 0.4);
+    }
+    nav a.active {
+      background-color: rgba(197, 40, 40, 0.2);
+      border-radius: 5px;
+    }
+    main {
+      padding: 180px 20px 20px;
+      background-color: rgba(255,255,255,0.95);
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .ekskul-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+    .ekskul-item {
+      text-align: center;
+    }
+    .ekskul-item img {
+      width: 100px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .grid-galeri, .grid-berita {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .grid-galeri img, .grid-berita img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .grid-galeri img:hover, .grid-berita img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Sekolah" style="height: 60px;">
+    <h1>SMA NEGERI 3 LUWU</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#profil">Profil</a></li>
+      <li><a href="#struktur">Struktur</a></li>
+      <li><a href="#program">Ekstrakurikuler</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#berita">Berita</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="home">
+      <h2>Beranda</h2>
+      <p>SELAMAT DATANG DI WEBSITE RESMI SMA NEGERI 3 LUWU</p>
+      <img src="GERBANG.png" style="width: 100%; max-width: 100%; border-radius: 8px;">
+    </section>
+
+    <section id="profil">
+      <h2>Profil Sekolah</h2>
+      <p>SMA Negeri 3 Luwu adalah salah satu sekolah tertua di Kabupaten Luwu, Sulawesi Selatan. Sekolah ini dikenal aktif dalam kegiatan akademik maupun ekstrakurikuler, dengan visi mencetak siswa beriman, berilmu, dan peduli lingkungan.</p>
+    </section>
+
+    <section id="struktur">
+      <h2>Struktur Organisasi</h2>
+      <img src="STRUKTUR.png" style="width: 100%; max-width: 800px; display: block; margin: auto;">
+    </section>
+
+    <section id="program">
+      <h2>Ekstrakurikuler</h2>
+      <div class="ekskul-grid">
+        <div class="ekskul-item"><img src="mpk.png"><p>MPK</p></div>
+        <div class="ekskul-item"><img src="bataradatu.png"><p>PRAMUKA</p></div>
+        <div class="ekskul-item"><img src="karyasastra.png"><p>KARYA SASTRA</p></div>
+        <div class="ekskul-item"><img src="SANGARSENI.png"><p>SANGGAR SENI</p></div>
+        <div class="ekskul-item"><img src="paskibra.png"><p>PASKIBRAKA</p></div>
+        <div class="ekskul-item"><img src="VOLLY.png"><p>VOLLY BALL</p></div>
+        <div class="ekskul-item"><img src="TAPAKSUCI.png"><p>TAPAK SUCI</p></div>
+        <div class="ekskul-item"><img src="PALANGMERAH.png"><p>PALANG MERAH</p></div>
+        <div class="ekskul-item"><img src="SISPALA.png"><p>SISPALA</p></div>
+        <div class="ekskul-item"><img src="DRUMBAND.png"><p>DRUM BAND</p></div>
+        <div class="ekskul-item"><img src="ROHIS.png"><p>ROHIS</p></div>
+        <div class="ekskul-item"><img src="FUTSAL.png"><p>FUTSAL</p></div>
+      </div>
+    </section>
+
+    <section id="galeri">
+      <h2>Galeri Kegiatan</h2>
+      <div class="grid-galeri">
+        <img src="foto1.jpg"><img src="foto2.jpg"><img src="foto3.jpg">
+        <img src="foto4.jpg"><img src="foto5.jpg"><img src="foto6.jpg">
+        <img src="foto7.jpg"><img src="foto8.jpg"><img src="foto9.jpg">
+      </div>
+    </section>
+
+    <section id="berita">
+      <h2>Berita dan Pengumuman</h2>
+      <h3>SISTEM PENERIMAAN MURID BARU TAHUN 2025</h3>
+      <div class="grid-berita">
+        <img src="0.png"><img src="1.png"><img src="2.png">
+        <img src="3.png"><img src="4.png"><img src="5.png">
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak Sekolah</h2>
+      <p>Alamat: Jl. Pendidikan, Kel. Larompong, Kab. Luwu</p>
+      <p>Telepon: +62 81242973662</p>
+      <p>Email: sma3luwu@gmail.com</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 SMA Negeri 3 Luwu. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
